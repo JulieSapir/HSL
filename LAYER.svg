@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 888 536">
+
+<g stroke="#000000" stroke-width="4" stroke-linejoin="round">
+    <rect x="170" y="24" width="198" height="80" rx="8" fill="#FB7185"/>
+    <rect x="382" y="24" width="154" height="80" rx="8" fill="#38BDF8"/>
+    <rect x="24" y="124" width="132" height="90" rx="8" fill="#A3E635"/>
+    <rect x="170" y="124" width="198" height="90" rx="8" fill="#FACC15"/>
+    <rect x="382" y="124" width="154" height="90" rx="8" fill="#A78BFA"/>
+    <rect x="550" y="124" width="176" height="90" rx="8" fill="#E879F9"/>
+    <rect x="24" y="234" width="512" height="105" rx="8" fill="#22D3EE"/>
+    <rect x="550" y="234" width="176" height="105" rx="8" fill="#4ADE80"/>
+    <rect x="740" y="234" width="124" height="105" rx="8" fill="#FB923C"/>
+    <rect x="24" y="359" width="840" height="140" rx="8" fill="#818CF8"/>
+  </g>
+  <g fill="#000000" font-family="Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="269" y="76" font-size="34">DMG</text>
+    <text x="459" y="76" font-size="34">EXE</text>
+    <text x="90" y="182" font-size="36">ELF</text>
+    <text x="269" y="182" font-size="36">Darling</text>
+    <text x="459" y="182" font-size="36">Wine</text>
+    <text x="638" y="182" font-size="36">APK</text>
+    <text x="280" y="302" font-size="44">HSL</text>
+    <text x="638" y="302" font-size="40">ANCO</text>
+    <text x="802" y="302" font-size="40">HAP</text>
+    <text x="444" y="448" font-size="52">HarmonyOS / OpenHarmony</text>
+  </g>
+</svg>
