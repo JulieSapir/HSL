@@ -14,31 +14,28 @@ HSL 仅支持 ARM64 架构的 HarmonyOS/OpenHarmony 系统。
 
 ## 特性
 
-- Alpine rootfs 支持
-- Ubuntu chroot 支持
+- Ubuntu rootfs 支持
 - sshd
 - 完全的 root 权限
-- glibc 支持
 - Python3 兼容
 - NodeJS 兼容
 - GPU 加速支持
 - IPv6 的原生网络套接字
-- 基础的x11支持
 - Windows ARM64 应用程序支持（通过wine）
-- Ubuntu rootfs
 - x11vnc
 
 ## 即将支持
 
+- 可更换自定义镜像
 - 挂载或从外部访问EXT4文件系统
-    - 可修改大小的稀疏EXT4
+    - 可修改大小的稀疏镜像
     - 碎片整理功能
-- PC端启动菜单及系统托盘
+- (仅PC端)
+    - 启动菜单及系统托盘
     - x11原生窗口渲染（undercover风格）
     - 仿explorer的文件管理器UI
-    - 无需保持主窗口开启的特性
+    - Proton直通OHNativeWindow
 - OpenJDK 兼容性
-- 专门为鸿蒙优化的 Proton
 - Windows x86\_64 应用程序
 - Linux x86\_64 应用程序 (目前通过 box64 以支持命令行程序, 正在向 FEX 迁移以获得更高性能)
 
