@@ -23,14 +23,16 @@ HSL 仅支持 ARM64 架构的 HarmonyOS/OpenHarmony 系统。
 - IPv6 的原生网络套接字
 - Windows ARM64 应用程序支持（通过wine）
 - x11vnc
+- partial JIT-less
 
-## 即将支持
+## TODO
 
+- 重构C++测试集、ArkTS wrapper
 - 可更换自定义镜像
 - 挂载或从外部访问EXT4文件系统
     - 可修改大小的稀疏镜像
     - 碎片整理功能
-- (仅PC端)
+- (仅PC端)使用[yserver](https://github.com/joske/yserver)作为x11后端
     - 启动菜单及系统托盘
     - x11原生窗口渲染（undercover风格）
     - 仿explorer的文件管理器UI
@@ -41,7 +43,7 @@ HSL 仅支持 ARM64 架构的 HarmonyOS/OpenHarmony 系统。
 
 ## 可能支持
 
-- JIT-less mode（V8 和 JVM 需要关闭 JIT 以提高性能）
+- full JIT-less mode（V8 和 JVM 需要关闭 JIT 以提高性能）
 - Docker (也许需要重度修改才能运行)
 - Wayland（鸿蒙底层限制，复杂度高）
 
