@@ -23,11 +23,13 @@ HSL 仅支持 ARM64 架构的 HarmonyOS/OpenHarmony 系统。
 - IPv6 的原生网络套接字
 - Windows ARM64 应用程序支持（通过wine）
 - x11vnc
-- partial JIT-less
+- JIT-less模式 基于[QEMU](https://github.com/harmoninux/qemu)
 
 ## TODO
 
-- 重构C++测试集、ArkTS wrapper
+- 修复坏掉的pty
+- 添加等宽字体[JetBrains Maple Mono](https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono)
+- 重构C++测试集
 - 可更换自定义镜像
 - 挂载或从外部访问EXT4文件系统
     - 可修改大小的稀疏镜像
@@ -43,19 +45,13 @@ HSL 仅支持 ARM64 架构的 HarmonyOS/OpenHarmony 系统。
 
 ## 可能支持
 
-- full JIT-less mode（V8 和 JVM 需要关闭 JIT 以提高性能）
 - Docker (也许需要重度修改才能运行)
-- Wayland（鸿蒙底层限制，复杂度高）
 
 ## 顺便一提
 
 1. 早期 HSL 使用 WebAssembly 提供真正的 Linux 内核，但后来被证明并不需要塞一个内核进去也能用。
 2. V社两周前发布了他们第一款ARM64设备，意味着Proton后续会加强ARM64的支持，这对HSL来说是好事，特别是对Windows游戏的兼容性。你真的可以期待以后在鸿蒙PC上玩大型3A。
 3. 在找完整的 Linux ？看看[HiSH](https://github.com/harmoninux/hiSH)吧
-
-## 关于开源
-
-等我清理完史山之后我会提交源代码并设置一个不错的许可证
 
 ## Credits
 
