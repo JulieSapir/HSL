@@ -6,7 +6,7 @@
 
 Hi Subsystem for Linux (HSL) 是一个用于在新操作系统上运行 Linux 应用程序的兼容层。通过模拟 Linux 系统环境而不是整个主机，HSL 能以极高的性能（99~99.8%）运行未修改的原生 Linux 应用程序。 和虚拟机不同， HSL 几乎没有额外开销且包含原生网络支持。
 
-HSL 仅支持 ARM64 架构的 HarmonyOS/OpenHarmony 系统。
+HSL 支持 ARM64 架构的 HarmonyOS/OpenHarmony 系统及 qemu-system-aarch64 完整模拟的 Alpine 环境。
 
 <p align="center">
 <img src="./LAYER.svg" alt="LAYER" width=600/>
@@ -15,7 +15,6 @@ HSL 仅支持 ARM64 架构的 HarmonyOS/OpenHarmony 系统。
 ## 特性
 
 - Ubuntu rootfs 支持
-- sshd
 - 完全的 root 权限
 - Python3 兼容
 - NodeJS 兼容
@@ -27,9 +26,9 @@ HSL 仅支持 ARM64 架构的 HarmonyOS/OpenHarmony 系统。
 
 ## TODO
 
+- 测试构建系统
+- 修复ssh
 - 修复坏掉的pty
-- 添加等宽字体[JetBrains Maple Mono](https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono)
-- 重构C++测试集
 - 可更换自定义镜像
 - 挂载或从外部访问EXT4文件系统
     - 可修改大小的稀疏镜像
@@ -42,10 +41,7 @@ HSL 仅支持 ARM64 架构的 HarmonyOS/OpenHarmony 系统。
 - OpenJDK 兼容性
 - Windows x86\_64 应用程序
 - Linux x86\_64 应用程序 (目前通过 box64 以支持命令行程序, 正在向 FEX 迁移以获得更高性能)
-
-## 可能支持
-
-- Docker (也许需要重度修改才能运行)
+- 基于[udocker](https://github.com/indigo-dc/udocker)的镜像运行环境
 
 ## 顺便一提
 
