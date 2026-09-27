@@ -16,20 +16,20 @@ HSL 支持 ARM64 架构的 HarmonyOS/OpenHarmony 系统及 qemu-system-aarch64 �
 
 - Ubuntu rootfs 支持
 - 完全的 root 权限
-- Python3 兼容
-- NodeJS 兼容
+- Python3/NodeJS/OpenJDK兼容
 - GPU 加速支持
 - IPv6 的原生网络套接字
 - Windows ARM64 应用程序支持（通过wine）
 - x11vnc
 - JIT-less模式 基于[QEMU](https://github.com/harmoninux/qemu)
+- 兼容 x86\_64 Linux 程序
 
 ## TODO
 
+- 修复Minecraft启动卡死
 - 鸿蒙端用Flutter重写
 - 优化syscall开销
 - Flatpak支持
-- 修复sshd
 - 修复坏掉的pty
 - 可更换自定义镜像
 - 挂载或从外部访问EXT4文件系统
@@ -40,9 +40,7 @@ HSL 支持 ARM64 架构的 HarmonyOS/OpenHarmony 系统及 qemu-system-aarch64 �
     - x11原生窗口渲染（undercover风格）
     - 仿explorer的文件管理器UI
     - Proton直通OHNativeWindow
-- OpenJDK 兼容性
 - Windows x86\_64 应用程序
-- Linux x86\_64 应用程序 (目前通过 box64 以支持命令行程序, 正在向 FEX 迁移以获得更高性能)
 - 基于[udocker](https://github.com/indigo-dc/udocker)的镜像运行环境
 
 ## 顺便一提
